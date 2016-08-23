@@ -94,6 +94,7 @@ public class RNDeviceModule extends ReactContextBaseJavaModule {
     constants.put("bundleId", packageName);
     constants.put("userAgent", System.getProperty("http.agent"));
     constants.put("timezone", TimeZone.getDefault().getID());
+    constants.put("osArch", System.getProperty("os.arch"));
     return constants;
   }
 }
